@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c2650">
+  <meta name="description" content="BHH Pharmacy Digital Hub — ศูนย์รวมเครื่องมือดิจิทัลสำหรับงานเภสัชกรรม โรงพยาบาลกรุงเทพหาดใหญ่">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>BHH Pharmacy | Digital Hub</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="svg-defs" aria-hidden="true">
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.4"/><rect x="14" y="3" width="7" height="7" rx="1.4"/><rect x="3" y="14" width="7" height="7" rx="1.4"/><rect x="14" y="14" width="7" height="7" rx="1.4"/></symbol>
+    <symbol id="i-pill" viewBox="0 0 24 24"><path d="m10.2 4.4 9.4 9.4a5.2 5.2 0 0 1-7.4 7.4l-9.4-9.4a5.2 5.2 0 0 1 7.4-7.4Z"/><path d="m7.8 16.2 8.4-8.4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M8 15h3"/></symbol>
+    <symbol id="i-coins" viewBox="0 0 24 24"><ellipse cx="8" cy="6" rx="5" ry="2.5"/><path d="M3 6v5c0 1.4 2.2 2.5 5 2.5.8 0 1.6-.1 2.3-.3M3 11v5c0 1.4 2.2 2.5 5 2.5"/><ellipse cx="16" cy="14" rx="5" ry="2.5"/><path d="M11 14v5c0 1.4 2.2 2.5 5 2.5s5-1.1 5-2.5v-5"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M5 3h9l5 5v13H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v6h5M7 13h8M7 17h8"/></symbol>
+    <symbol id="i-syringe" viewBox="0 0 24 24"><path d="m6 18 12-12M13 3l8 8M3 21l4-4M9 6l9 9M12 9l-2-2M15 12l-2-2"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14A2.5 2.5 0 0 0 6.5 22H20v-5"/><path d="M8 7h8M8 11h8"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 1 1 8 0v3M12 14v3"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="7"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3 6.5 7.2.9-5.2 5 .9 7-5.9-3.3-5.9 3.3.9-7-5.2-5 7.2-.9Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="16" cy="17" r="3"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></symbol>
+  </svg>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="./" aria-label="กลับหน้าหลัก">
+        <span class="brand-mark"><span class="mark-cross">+</span></span>
+        <span class="brand-copy"><strong>BHH Pharmacy</strong><small>DIGITAL WORKSPACE</small></span>
+      </a>
+      <div class="sidebar-caption">WORKSPACE</div>
+      <nav class="side-nav" id="sideNav" aria-label="หมวดหมู่เครื่องมือ">
+        <button class="side-item active" type="button" data-filter="all" aria-pressed="true"><svg class="icon"><use href="#i-grid"/></svg><span>แอปพลิเคชันทั้งหมด</span><em id="countAll">10</em></button>
+        <button class="side-item" type="button" data-filter="clinical" aria-pressed="false"><svg class="icon"><use href="#i-pill"/></svg><span>Clinical Tools</span><em id="countClinical"></em></button>
+        <button class="side-item" type="button" data-filter="operations" aria-pressed="false"><svg class="icon"><use href="#i-sliders"/></svg><span>Operations</span><em id="countOperations"></em></button>
+        <button class="side-item" type="button" data-filter="resources" aria-pressed="false"><svg class="icon"><use href="#i-book"/></svg><span>Resources</span><em id="countResources"></em></button>
+        <button class="side-item" type="button" data-filter="admin" aria-pressed="false"><svg class="icon"><use href="#i-lock"/></svg><span>Administration</span><em id="countAdmin"></em></button>
+        <div class="nav-break"></div>
+        <button class="side-item" type="button" data-filter="favorites" aria-pressed="false"><svg class="icon"><use href="#i-star"/></svg><span>รายการโปรด</span><em id="countFavorites"></em></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="info-tile"><span class="info-icon">✳</span><strong>One portal.<br>Every tool.</strong><p>รวมเครื่องมือสำหรับงานเภสัชกรรมไว้ในที่เดียว</p><span class="info-tile-accent"></span></div>
+        <div class="sidebar-identity"><span class="identity-dot"></span><span>Bangkok Hospital Hatyai<br><small>Pharmacy Department</small></span></div>
+      </div>
+    </aside>
+
+    <div class="main-column">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="mobile-menu" id="mobileMenu" type="button" aria-label="เปิดเมนู" aria-expanded="false"><svg class="icon"><use href="#i-menu"/></svg></button>
+          <div class="breadcrumb">Workspace <svg class="icon"><use href="#i-chevron"/></svg> <strong>Overview</strong></div>
+        </div>
+        <div class="topbar-right"><span class="today" id="todayLabel"></span><span class="top-divider"></span><div class="workspace-avatar" aria-hidden="true">Rx</div></div>
+      </header>
+
+      <main class="main-content">
+        <section class="hero" aria-labelledby="heroTitle">
+          <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+          <div class="hero-decoration" aria-hidden="true"><div class="deco-ring ring-one"></div><div class="deco-ring ring-two"></div><div class="deco-center">Rx<span>+</span></div><i class="deco-dot dot-one"></i><i class="deco-dot dot-two"></i><i class="deco-dot dot-three"></i></div>
+          <div class="hero-content">
+            <span class="hero-eyebrow"><span class="eyebrow-dot"></span> BHH PHARMACY DIGITAL HUB</span>
+            <h1 id="heroTitle">Your workspace.<br><span>Everything in one place.</span></h1>
+            <p>ศูนย์รวมแอปพลิเคชันและเครื่องมือดิจิทัลสำหรับงานเภสัชกรรม<br class="desktop-break"> เข้าถึงทุกระบบได้ง่าย รวดเร็ว ในหน้าเดียว</p>
+            <div class="hero-actions"><a href="#applications" class="hero-button">สำรวจแอปพลิเคชัน <svg class="icon"><use href="#i-arrow"/></svg></a><span class="hero-count"><strong id="heroCount">10</strong> available applications</span></div>
+          </div>
+        </section>
+
+        <div class="metrics" aria-label="สรุประบบ">
+          <div class="metric"><span class="metric-icon metric-icon-blue"><svg class="icon"><use href="#i-grid"/></svg></span><span><strong id="totalMetric">10</strong><small>ระบบทั้งหมด</small></span></div>
+          <div class="metric"><span class="metric-icon metric-icon-mint"><svg class="icon"><use href="#i-pill"/></svg></span><span><strong id="clinicalMetric">3</strong><small>Clinical Tools</small></span></div>
+          <div class="metric"><span class="metric-icon metric-icon-purple"><svg class="icon"><use href="#i-sliders"/></svg></span><span><strong id="operationsMetric">3</strong><small>Operations</small></span></div>
+          <div class="metric"><span class="metric-icon metric-icon-amber"><svg class="icon"><use href="#i-star"/></svg></span><span><strong id="favoritesMetric">0</strong><small>รายการโปรดของฉัน</small></span></div>
+        </div>
+
+        <section class="apps-section" id="applications" aria-labelledby="sectionTitle">
+          <div class="section-heading">
+            <div><span class="section-eyebrow">EXPLORE YOUR TOOLS</span><h2 id="sectionTitle">แอปพลิเคชันทั้งหมด <span class="section-count" id="visibleCount">10</span></h2><p id="sectionDescription">เลือกเครื่องมือที่ต้องการเพื่อเริ่มใช้งาน</p></div>
+            <label class="search-box"><svg class="icon"><use href="#i-search"/></svg><input id="searchInput" type="search" autocomplete="off" placeholder="ค้นหาชื่อหรือประเภทแอป..." aria-label="ค้นหาแอปพลิเคชัน"><kbd>/</kbd></label>
+          </div>
+          <div class="mobile-filters" id="mobileFilters" aria-label="กรองหมวดหมู่"></div>
+          <div class="app-grid" id="appGrid" aria-live="polite"></div>
+          <div class="empty-state" id="emptyState" hidden><div class="empty-graphic"><svg class="icon"><use href="#i-search"/></svg></div><h3>ไม่พบแอปพลิเคชัน</h3><p>ลองใช้คำค้นหาอื่น หรือเลือกแสดงแอปทั้งหมด</p><button type="button" id="resetFilters">แสดงแอปทั้งหมด</button></div>
+        </section>
+
+        <footer class="footer"><span>© <span id="copyrightYear"></span> BHH Pharmacy Digital Hub</span><span class="footer-note">เครื่องมือสนับสนุนการทำงาน · โปรดทวนสอบข้อมูลทางคลินิกก่อนใช้งานจริง</span></footer>
+      </main>
+    </div>
+  </div>
+  <div class="mobile-backdrop" id="mobileBackdrop" hidden></div>
+
+  <dialog class="admin-dialog" id="adminDialog" aria-labelledby="dialogTitle">
+    <form id="adminForm" autocomplete="off">
+      <div class="dialog-icon"><svg class="icon"><use href="#i-lock"/></svg></div>
+      <button type="button" class="dialog-close" id="dialogClose" aria-label="ปิด"><svg class="icon"><use href="#i-close"/></svg></button>
+      <span class="dialog-eyebrow">RESTRICTED ACCESS</span>
+      <h2 id="dialogTitle">เข้าสู่ระบบจัดการ PediDose</h2>
+      <p class="dialog-description">กรอก Admin Token ที่ได้รับอนุญาตเพื่อเปิดระบบจัดการยาและสูตรคำนวณ โดย Portal จะไม่บันทึก Token ของคุณ</p>
+      <label class="token-label" for="adminToken">Admin Token</label>
+      <div class="token-field"><input id="adminToken" name="adminToken" type="password" required spellcheck="false" autocomplete="off" placeholder="กรอก Admin Token"><button type="button" id="toggleToken" aria-label="แสดงหรือซ่อน Token">แสดง</button></div>
+      <p class="security-note"><svg class="icon"><use href="#i-shield"/></svg><span>ระบบปลายทางรับ Token ผ่าน URL ซึ่งอาจปรากฏในประวัติเบราว์เซอร์ กรุณาใช้เฉพาะบัญชีที่ได้รับอนุญาต</span></p>
+      <button class="dialog-submit" type="submit">เปิดระบบ Admin <svg class="icon"><use href="#i-arrow"/></svg></button>
+    </form>
+  </dialog>
+  <noscript><div class="noscript-notice">กรุณาเปิด JavaScript เพื่อใช้การค้นหาและแสดงรายการแอปบน Portal นี้ ดูลิงก์แอปทั้งหมดได้ใน <a href="https://github.com/JuiPharm/Portal_App#applications">README</a></div></noscript>
+</body>
+</html>
